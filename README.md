@@ -1,81 +1,54 @@
+# Snappy - Chat Application 
+Snappy is chat application build with the power of MERN Stack. You can find the tutorial [here](https://www.youtube.com/watch?v=otaQKODEUFs)
 
-# Talk-A-Tive
 
-Talk-a-tive is a Full Stack Chatting App.
-Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
-## Tech Stack
+![login page](./images/snappy_login.png)
 
-**Client:** React JS
+![home page](./images/snappy.png)
 
-**Server:** Node JS, Express JS
+## Installation Guide
 
-**Database:** Mongo DB
-  
-## Demo
+### Requirements
+- [Nodejs](https://nodejs.org/en/download)
+- [Mongodb](https://www.mongodb.com/docs/manual/administration/install-community/)
 
-https://talk-a-tive.herokuapp.com/
+Both should be installed and make sure mongodb is running.
 
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/group%20%2B%20notif.PNG)
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/piyush-eon/mern-chat-app
+```shell
+git clone https://github.com/koolkishan/chat-app-react-nodejs
+cd chat-app-react-nodejs
+```
+Now rename env files from .env.example to .env
+```shell
+cd public
+mv .env.example .env
+cd ..
+cd server
+mv .env.example .env
+cd ..
 ```
 
-Go to the project directory
+Now install the dependencies
+```shell
+cd server
+yarn
+cd ..
+cd public
+yarn
+```
+We are almost done, Now just start the development server.
 
-```bash
-  cd mern-chat-app
+For Frontend.
+```shell
+cd public
+yarn start
+```
+For Backend.
+
+Open another terminal in folder, Also make sure mongodb is running in background.
+```shell
+cd server
+yarn start
 ```
 
-Install dependencies
-
-```bash
-  npm install
-```
-
-```bash
-  cd frontend/
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
-Start the Client
-
-```bash
-  //open now terminal
-  cd frontend
-  npm start
-```
-
-  
-# Features
-
-### Authenticaton
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/login.PNG)
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/signup.PNG)
-### Real Time Chatting with Typing indicators
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/real-time.PNG)
-### One to One chat
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/mainscreen.PNG)
-### Search Users
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/search.PNG)
-### Create Group Chats
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/new%20grp.PNG)
-### Notifications 
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/group%20%2B%20notif.PNG)
-### Add or Remove users from group
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/add%20rem.PNG)
-### View Other user Profile
-![](https://github.com/piyush-eon/mern-chat-app/blob/master/screenshots/profile.PNG)
-## Made By
-
-- [@Piyush-eon](https://github.com/piyush-eon)
-
-  
+Done! Now open localhost:3000 in your browser.
